@@ -19,12 +19,15 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         }
 
         // GET: Cliente
+        [Route("cliente")]
+        [Route("cliente/listar")]
         public IActionResult Index()
         {
             return View(_context.Cliente.ToListAsync());
         }
 
         // GET: Cliente/Details/5
+        [Route("cliente/detalhes/{id:int}")]
         public IActionResult Details(int? id)
         {
             if (id == null)
@@ -43,6 +46,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         }
 
         // GET: Cliente/Create
+        [Route("cliente/cadastrar")]
         public IActionResult Create()
         {
             return View();
@@ -53,6 +57,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("cliente/cadastrar")]
         public async Task<IActionResult> Create([Bind("ClienteId,Nome,CPF,Email,DataCadastrada")] Cliente cliente)
         {
             if (ModelState.IsValid)
@@ -65,6 +70,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         }
 
         // GET: Cliente/Edit/5
+        [Route("cliente/editar/{int:id}")]
         public IActionResult Edit(int? id)
         {
             if (id == null)
@@ -85,6 +91,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("cliente/editar/{id:int}")]
         public IActionResult Edit(int id, [Bind("ClienteId,Nome,CPF,Email,DataCadastrada")] Cliente cliente)
         {
             if (id != cliente.ClienteId)
@@ -116,6 +123,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         }
 
         // GET: Cliente/Delete/5
+        [Route("cliente/deletar/{id:int}")]
         public IActionResult Delete(int? id)
         {
             if (id == null)
@@ -134,6 +142,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         }
 
         // POST: Cliente/Delete/5
+        [Route("cliente/deletar/{id:int}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)

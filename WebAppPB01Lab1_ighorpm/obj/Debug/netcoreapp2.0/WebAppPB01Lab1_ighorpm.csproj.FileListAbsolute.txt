@@ -1,0 +1,11 @@
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\bin\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.deps.json
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\bin\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.runtimeconfig.json
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\bin\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.runtimeconfig.dev.json
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\bin\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.dll
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\bin\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.pdb
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\obj\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.csprojResolveAssemblyReference.cache
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\obj\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.csproj.CoreCompileInputs.cache
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\obj\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.AssemblyInfoInputs.cache
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\obj\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.AssemblyInfo.cs
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\obj\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.dll
+C:\Users\Ighorpm\source\repos\WebAppPB01Lab1_ighorpm\WebAppPB01Lab1_ighorpm\obj\Debug\netcoreapp2.0\WebAppPB01Lab1_ighorpm.pdb

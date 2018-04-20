@@ -19,11 +19,13 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         }
 
         // GET: Cliente
-        [Route("cliente")]
+        
         [Route("cliente/listar")]
+        [Route("cliente")]
+        [Route("index")]
         public IActionResult Index()
         {
-            return View(_context.Cliente.ToListAsync());
+            return View(_context.Cliente.ToList());
         }
 
         // GET: Cliente/Details/5
@@ -58,19 +60,19 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("cliente/cadastrar")]
-        public async Task<IActionResult> Create([Bind("ClienteId,Nome,CPF,Email,DataCadastrada")] Cliente cliente)
+        public IActionResult Create([Bind("ClienteId,Nome,CPF,Email,DataCadastrada")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(cliente);
-                await _context.SaveChangesAsync();
+                _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             return View(cliente);
         }
 
         // GET: Cliente/Edit/5
-        [Route("cliente/editar/{int:id}")]
+        [Route("cliente/editar")]
         public IActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,7 +80,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
                 return NotFound();
             }
 
-            var cliente = _context.Cliente.SingleOrDefaultAsync(m => m.ClienteId == id);
+            var cliente = _context.Cliente.SingleOrDefault(m => m.ClienteId == id);
             if (cliente == null)
             {
                 return NotFound();
@@ -104,7 +106,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
                 try
                 {
                     _context.Update(cliente);
-                    _context.SaveChangesAsync();
+                    _context.SaveChanges();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -149,7 +151,7 @@ namespace WebAppPB01Lab1_ighorpm.Controllers
         {
             var cliente = _context.Cliente.SingleOrDefault(m => m.ClienteId == id);
             _context.Cliente.Remove(cliente);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
 
